@@ -159,7 +159,7 @@ const Sustainability = () => {
                 Our signature packaging material is grown, not manufactured. Using agricultural waste and mycelium (mushroom roots), we create custom-molded packaging that's 100% home compostable.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-8">
                 {[
                   {
                     label: "Biodegradable",
