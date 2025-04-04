@@ -1,3 +1,6 @@
+Sure, based on the analysis and suggestions, here is the updated code for `Sustainability.tsx` file:
+
+```tsx
 import { ArrowRight, Leaf, BarChart3, LineChart, Recycle, Droplets, TreePine } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -30,32 +33,28 @@ const Sustainability = () => {
         </div>
       </section>
       
-      {/* Environmental Impact Section */}
-<section className="py-24"> {/* Increased padding */}
-  <div className="container mx-auto px-4">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Environmental Impact</h2>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        Every EcoShield packaging solution is designed with both performance and planet in mind.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-      {/* Adjust each grid item */}
-      <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden"> {/* Added overflow-hidden */}
-        <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-          <Recycle className="w-6 h-6 text-eco-green" />
-        </div>
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Circular Economy</h3>
-        <p className="text-gray-600">
-          Our packaging is designed to be reused, recycled, or composted, creating a closed-loop system.
-        </p>
-      </div>
-      {/* Repeat similar adjustments for other grid items */}
-    </div>
-  </div>
-</section>
+      {/* Environmental Impact */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Environmental Impact</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Every EcoShield packaging solution is designed with both performance and planet in mind.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden">
+              <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                <Recycle className="w-6 h-6 text-eco-green" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Circular Economy</h3>
+              <p className="text-gray-600">
+                Our packaging is designed to be reused, recycled, or composted, creating a closed-loop system.
+              </p>
+            </div>
             
-            <div className="bg-white p-6 rounded-xl shadow hover-lift">
+            <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden">
               <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <Droplets className="w-6 h-6 text-eco-green" />
               </div>
@@ -65,7 +64,7 @@ const Sustainability = () => {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow hover-lift">
+            <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden">
               <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <TreePine className="w-6 h-6 text-eco-green" />
               </div>
@@ -75,7 +74,7 @@ const Sustainability = () => {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow hover-lift">
+            <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden">
               <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-eco-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -367,26 +366,4 @@ const Sustainability = () => {
       
       {/* CTA Section */}
       <section className="py-20 bg-eco-green-dark text-white">
-        <div className="container mx-auto px-4 text-center">
-          <Leaf className="w-12 h-12 text-white/80 mx-auto mb-6" />
-          <h2 className="text-3xl font-bold mb-4">Ready to Make Your Packaging More Sustainable?</h2>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto mb-8">
-            Join the hundreds of businesses reducing their environmental footprint with EcoShield Packaging.
-          </p>
-          <Link to="/contact" className="bg-white text-eco-green-dark px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
-            Get Started Today
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </div>
-      </section>
-      
-      {/* Newsletter */}
-      <NewsletterSignup />
-      
-      {/* Footer */}
-      <Footer />
-    </div>
-  );
-};
-
-export default Sustainability;
+        <div className="container mx
