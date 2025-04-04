@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import { Tabs, TabsList, TabsContent } from '@/components/ui/tabs';
 import SolutionCard from './SolutionCard';
 import SolutionBenefits from './SolutionBenefits';
@@ -10,6 +11,8 @@ interface SolutionsContentProps {
 }
 
 const SolutionsContent = ({ solutions }: SolutionsContentProps) => {
+  const [activeTab, setActiveTab] = useState(solutions[0].id);
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -20,7 +23,11 @@ const SolutionsContent = ({ solutions }: SolutionsContentProps) => {
           </p>
         </div>
         
-        <Tabs defaultValue={solutions[0].id} className="w-full">
+        <Tabs 
+          value={activeTab} 
+          onValueChange={setActiveTab} 
+          className="w-full"
+        >
           <TabsList className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 bg-transparent">
             {solutions.map((solution) => (
               <SolutionCard 

@@ -12,7 +12,7 @@ const SolutionCard = ({ id, name, description }: SolutionCardProps) => {
   return (
     <TabsTrigger 
       value={id}
-      className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm h-auto"
+      className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm h-auto w-full"
     >
       <div className="flex items-start">
         <div className="mr-4 mt-1 flex-shrink-0">
