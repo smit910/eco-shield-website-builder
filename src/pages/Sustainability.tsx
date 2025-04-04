@@ -1,5 +1,4 @@
-
-import { ArrowRight, Leaf, BarChart3, LineChart, Recycle, Drop, TreePine } from 'lucide-react';
+import { ArrowRight, Leaf, BarChart3, LineChart, Recycle, Droplets, TreePine } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
@@ -54,7 +53,7 @@ const Sustainability = () => {
             
             <div className="bg-white p-6 rounded-xl shadow hover-lift">
               <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                <Drop className="w-6 h-6 text-eco-green" />
+                <Droplets className="w-6 h-6 text-eco-green" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Water Conservation</h3>
               <p className="text-gray-600">
@@ -117,7 +116,7 @@ const Sustainability = () => {
               </div>
               
               <div className="text-center">
-                <Drop className="w-8 h-8 text-eco-green mx-auto mb-2" />
+                <Droplets className="w-8 h-8 text-eco-green mx-auto mb-2" />
                 <div className="text-3xl font-bold text-gray-900">12.5M</div>
                 <p className="text-gray-600 text-sm">Gallons of Water Saved</p>
               </div>
