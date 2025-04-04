@@ -1,4 +1,6 @@
 
+// Let's update the problematic parts of the Solutions page
+
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -208,10 +210,10 @@ const Solutions = () => {
                 <TabsTrigger 
                   key={solution.id} 
                   value={solution.id}
-                  className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm"
+                  className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm h-auto"
                 >
                   <div className="flex items-start">
-                    <div className="mr-4 mt-1">
+                    <div className="mr-4 mt-1 flex-shrink-0">
                       {solution.id === "impact-resistant" ? (
                         <Package className="w-6 h-6 text-eco-green" />
                       ) : (
@@ -220,9 +222,9 @@ const Solutions = () => {
                         </svg>
                       )}
                     </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900">{solution.name}</h3>
-                      <p className="text-gray-600 text-sm mt-1 pr-4">{solution.description}</p>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-1">{solution.name}</h3>
+                      <p className="text-gray-600 text-sm">{solution.description}</p>
                     </div>
                   </div>
                 </TabsTrigger>

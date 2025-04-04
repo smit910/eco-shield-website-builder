@@ -20,7 +20,7 @@ const FeatureCard = ({
 }: FeatureCardProps) => {
   return (
     <div className={cn(
-      "bg-white rounded-xl p-6 shadow-md transition-all hover:shadow-lg hover-lift",
+      "bg-white rounded-xl p-6 shadow-md transition-all hover:shadow-lg hover:translate-y-[-4px] duration-300",
       className
     )}>
       <div className={cn(
