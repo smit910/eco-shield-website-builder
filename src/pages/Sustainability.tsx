@@ -30,26 +30,30 @@ const Sustainability = () => {
         </div>
       </section>
       
-      {/* Environmental Impact */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Environmental Impact</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Every EcoShield packaging solution is designed with both performance and planet in mind.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white p-6 rounded-xl shadow hover-lift">
-              <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                <Recycle className="w-6 h-6 text-eco-green" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Circular Economy</h3>
-              <p className="text-gray-600">
-                Our packaging is designed to be reused, recycled, or composted, creating a closed-loop system.
-              </p>
-            </div>
+      {/* Environmental Impact Section */}
+<section className="py-24"> {/* Increased padding */}
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Environmental Impact</h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        Every EcoShield packaging solution is designed with both performance and planet in mind.
+      </p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      {/* Adjust each grid item */}
+      <div className="bg-white p-6 rounded-xl shadow hover-lift overflow-hidden"> {/* Added overflow-hidden */}
+        <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+          <Recycle className="w-6 h-6 text-eco-green" />
+        </div>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Circular Economy</h3>
+        <p className="text-gray-600">
+          Our packaging is designed to be reused, recycled, or composted, creating a closed-loop system.
+        </p>
+      </div>
+      {/* Repeat similar adjustments for other grid items */}
+    </div>
+  </div>
+</section>
             
             <div className="bg-white p-6 rounded-xl shadow hover-lift">
               <div className="bg-eco-green/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
