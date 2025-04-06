@@ -28,7 +28,7 @@ const SolutionsContent = ({ solutions }: SolutionsContentProps) => {
           onValueChange={setActiveTab} 
           className="w-full"
         >
-          <TabsList className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 bg-transparent">
+          <TabsList className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 bg-transparent h-auto">
             {solutions.map((solution) => (
               <SolutionCard 
                 key={solution.id}

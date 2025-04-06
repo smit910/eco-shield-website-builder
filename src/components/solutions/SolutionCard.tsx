@@ -12,9 +12,9 @@ const SolutionCard = ({ id, name, description }: SolutionCardProps) => {
   return (
     <TabsTrigger 
       value={id}
-      className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm h-auto w-full"
+      className="border border-gray-200 bg-white hover:bg-gray-50 rounded-lg p-6 text-left data-[state=active]:border-eco-green data-[state=active]:border-2 shadow-sm h-auto w-full flex flex-col"
     >
-      <div className="flex items-start">
+      <div className="flex items-start w-full">
         <div className="mr-4 mt-1 flex-shrink-0">
           {id === "impact-resistant" ? (
             <Package className="w-6 h-6 text-eco-green" />
@@ -26,7 +26,7 @@ const SolutionCard = ({ id, name, description }: SolutionCardProps) => {
         </div>
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
-          <p className="text-gray-600 text-sm">{description}</p>
+          <p className="text-gray-600 text-sm break-words">{description}</p>
         </div>
       </div>
     </TabsTrigger>
