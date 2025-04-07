@@ -1,3 +1,4 @@
+
 import { ArrowRight, Leaf, BarChart3, LineChart, Recycle, Droplets, TreePine } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -143,7 +144,7 @@ const Sustainability = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
             <div>
               <div className="h-80 rounded-xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1584680226833-0d680d0a0794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Mushroom Foam" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/656988ba-1490-49bf-89df-019479abc323.png" alt="Mushroom Foam" className="w-full h-full object-cover" />
               </div>
             </div>
             
@@ -225,7 +226,7 @@ const Sustainability = () => {
             
             <div className="order-1 md:order-2">
               <div className="h-80 rounded-xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1597106402699-c2dc3f58a998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Corrugated Bubble Wrap" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/62f022b6-2483-4786-9bee-2218621b1346.png" alt="Corrugated Bubble Wrap" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -233,7 +234,7 @@ const Sustainability = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <div className="h-80 rounded-xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" alt="Hemp Fiber Padding" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/4ed1b638-20ac-4fb4-95a0-b801a97ea7ec.png" alt="Hemp Fiber Padding" className="w-full h-full object-cover" />
               </div>
             </div>
             

@@ -60,7 +60,7 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
+                src="/lovable-uploads/ed2d2a1a-a950-45eb-ad8d-2155cb374010.png" 
                 alt="Sustainable packaging materials" 
                 className="rounded-lg shadow-lg w-full object-cover h-[400px]"
               />

@@ -12,7 +12,7 @@ const CaseStudies = () => {
       id: 1,
       title: "How TechGadgets Reduced Shipping Damage by 87%",
       excerpt: "TechGadgets Inc. was experiencing significant losses due to product damage during shipping. Learn how EcoShield's mushroom foam solution transformed their logistics.",
-      image: "https://images.unsplash.com/photo-1625575055463-733d7d9d6264?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
+      image: "/lovable-uploads/4fb125d7-c557-4fe0-8839-e0be6ff092ba.png",
       client: {
         name: "Sarah Johnson",
         role: "Logistics Director, TechGadgets Inc.",
