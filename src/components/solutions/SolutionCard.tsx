@@ -24,10 +24,12 @@ const SolutionCard = ({ id, name, description }: SolutionCardProps) => {
             </svg>
           )}
         </div>
-        <div className="flex-1">
-          <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
-          <p className="text-gray-600 text-sm break-words">{description}</p>
-        </div>
+        <div className="flex-1 min-w-0">
+    <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
+    <p className="text-gray-600 text-sm break-words overflow-hidden text-ellipsis">
+      {description}
+    </p>
+  </div>
       </div>
     </TabsTrigger>
   );
