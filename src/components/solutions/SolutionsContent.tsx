@@ -5,6 +5,7 @@ import SolutionCard from './SolutionCard';
 import SolutionBenefits from './SolutionBenefits';
 import SolutionProducts from './SolutionProducts';
 import { SolutionCategory } from '@/types/solutions';
+import { Download, Play } from 'lucide-react';
 
 interface SolutionsContentProps {
   solutions: SolutionCategory[];
