@@ -11,6 +11,8 @@ import Sustainability from "./pages/Sustainability";
 import Contact from "./pages/Contact";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
+import AboutUs from "./pages/AboutUs";
+import ContactDetails from "./pages/ContactDetails";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/sustainability" element={<Sustainability />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-details" element={<ContactDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

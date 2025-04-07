@@ -1,5 +1,5 @@
 
-import { ArrowRight, Check, Leaf, Package, ShieldCheck, TrendingUp } from 'lucide-react';
+import { ArrowRight, Check, Leaf, Package, ShieldCheck, TrendingUp, Download, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import FeatureCard from '@/components/FeatureCard';
 import Navbar from '@/components/Navbar';
@@ -35,10 +35,34 @@ const Index = () => {
                 <Leaf className="ml-2 h-5 w-5" />
               </Link>
             </div>
+            <div className="flex flex-wrap gap-4 mt-4 animate-fade-in" style={{animationDelay: "0.7s"}}>
+              <a 
+                href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing" 
+                target="_blank" 
+                className="btn-outline inline-flex items-center"
+              >
+                View Presentation
+                <Download className="ml-2 h-5 w-5" />
+              </a>
+              <a 
+                href="https://drive.google.com/file/d/1aDdV9AFdM-r2bAUgOAuY_eVWe6B_3X80/view?usp=sharing" 
+                target="_blank" 
+                className="btn-outline inline-flex items-center"
+              >
+                Watch Video
+                <Play className="ml-2 h-5 w-5" />
+              </a>
+            </div>
             <div className="mt-8 flex items-center gap-4 animate-fade-in" style={{animationDelay: "0.8s"}}>
               <div className="flex -space-x-2">
                 {Array.from({ length: 3 }).map((_, i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200"></div>
+                  <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
+                    <img 
+                      src={`https://randomuser.me/api/portraits/women/${i + 20}.jpg`} 
+                      alt="User avatar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 ))}
               </div>
               <div>
@@ -122,6 +146,13 @@ const Index = () => {
               </svg>}
             />
           </div>
+          
+          <div className="text-center mt-8">
+            <Link to="/solutions" className="btn-primary inline-flex items-center">
+              Learn More About Solutions
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -167,11 +198,19 @@ const Index = () => {
                 ))}
               </div>
               
-              <div className="mt-8">
+              <div className="mt-8 flex flex-wrap gap-4">
                 <Link to="/solutions" className="btn-primary inline-flex items-center">
                   Explore Our Solutions
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
+                <a 
+                  href="https://drive.google.com/file/d/1aDdV9AFdM-r2bAUgOAuY_eVWe6B_3X80/view?usp=sharing" 
+                  target="_blank" 
+                  className="btn-outline inline-flex items-center"
+                >
+                  Watch Intro Video
+                  <Play className="ml-2 h-5 w-5" />
+                </a>
               </div>
             </div>
             
@@ -196,7 +235,7 @@ const Index = () => {
             <TestimonialCard 
               name="Sarah Johnson"
               company="TechGadgets Inc."
-              image="/placeholder.svg"
+              image="https://randomuser.me/api/portraits/women/32.jpg"
               quote="EcoShield's packaging has reduced our damage rate from 8% to less than 1%. The ROI was almost immediate."
               stats={[
                 { label: "Damage Reduction", value: "87%" },
@@ -206,7 +245,7 @@ const Index = () => {
             <TestimonialCard 
               name="Michael Rodriguez"
               company="Luxury Ceramics Co."
-              image="/placeholder.svg"
+              image="https://randomuser.me/api/portraits/men/37.jpg"
               quote="As a company shipping fragile items, we've struggled with damage for years. EcoShield solved our problem completely."
               stats={[
                 { label: "Damage Reduction", value: "93%" },
@@ -216,7 +255,7 @@ const Index = () => {
             <TestimonialCard 
               name="Emily Chen"
               company="GreenCommerce"
-              image="/placeholder.svg"
+              image="https://randomuser.me/api/portraits/women/44.jpg"
               quote="Not only did EcoShield reduce our damages, but our customers love the eco-friendly packaging. Win-win!"
               stats={[
                 { label: "Waste Reduction", value: "76%" },
@@ -251,6 +290,22 @@ const Index = () => {
               <Link to="/solutions" className="bg-transparent text-white border border-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition-colors">
                 Explore Solutions
               </Link>
+            </div>
+            <div className="mt-4 flex flex-wrap justify-center gap-4">
+              <a 
+                href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing"
+                target="_blank" 
+                className="bg-transparent text-white border border-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition-colors"
+              >
+                Access Presentation
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/smit-patel-0ba852134/"
+                target="_blank" 
+                className="bg-transparent text-white border border-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition-colors"
+              >
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>

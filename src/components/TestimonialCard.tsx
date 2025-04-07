@@ -53,7 +53,7 @@ const TestimonialCard = ({ name, company, image, quote, stats, rating = 5 }: Tes
         <div className="flex items-center">
           <div className="rounded-full overflow-hidden w-12 h-12 mr-4 flex-shrink-0">
             <img 
-              src={image || "/placeholder.svg"} 
+              src={image} 
               alt={name}
               className="w-full h-full object-cover"
             />

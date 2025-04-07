@@ -25,11 +25,11 @@ const SolutionCard = ({ id, name, description }: SolutionCardProps) => {
           )}
         </div>
         <div className="flex-1 min-w-0">
-    <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
-    <p className="text-gray-600 text-sm break-words overflow-hidden text-ellipsis">
-      {description}
-    </p>
-  </div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
+          <p className="text-gray-600 text-sm break-words overflow-hidden">
+            {description}
+          </p>
+        </div>
       </div>
     </TabsTrigger>
   );

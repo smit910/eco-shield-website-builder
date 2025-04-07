@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -42,9 +42,10 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/solutions" className="nav-link">Solutions</Link>
+          <Link to="/about-us" className="nav-link">About Us</Link>
           <Link to="/case-studies" className="nav-link">Case Studies</Link>
           <Link to="/sustainability" className="nav-link">Sustainability</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/contact-details" className="nav-link">Contact</Link>
         </nav>
 
         <div className="hidden md:block">
@@ -65,9 +66,10 @@ const Navbar = () => {
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-md py-4 px-4 flex flex-col space-y-4">
           <Link to="/" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/solutions" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Solutions</Link>
+          <Link to="/about-us" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>About Us</Link>
           <Link to="/case-studies" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
           <Link to="/sustainability" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Sustainability</Link>
-          <Link to="/contact" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          <Link to="/contact-details" className="nav-link py-2" onClick={() => setIsMenuOpen(false)}>Contact</Link>
           <Link to="/contact" className="btn-primary text-center" onClick={() => setIsMenuOpen(false)}>Get a Quote</Link>
         </div>
       )}
