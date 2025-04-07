@@ -62,7 +62,7 @@ const SolutionsContent = ({ solutions }: SolutionsContentProps) => {
         <div className="mt-12 text-center">
           <a 
             href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing"
-            target="_blank"
+            target="_blank" 
             className="btn-primary inline-flex items-center mx-2"
           >
             View Detailed Presentation

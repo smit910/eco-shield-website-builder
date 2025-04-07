@@ -60,7 +60,7 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1610599811835-3b11a1b2da6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
+                src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" 
                 alt="Sustainable packaging materials" 
                 className="rounded-lg shadow-lg w-full object-cover h-[400px]"
               />
@@ -175,10 +175,10 @@ const AboutUs = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover-lift">
+          <div className="flex justify-center">
+            <div className="max-w-md bg-white rounded-xl shadow-md overflow-hidden hover-lift">
               <img 
-                src="https://media.licdn.com/dms/image/D4D03AQF3dTkbMHGqhA/profile-displayphoto-shrink_800_800/0/1670755380002?e=1718236800&v=beta&t=b4lW340BSYvxoWUFhbZFRcLc9FpOrD7jgU0M4rWA6Rc" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80" 
                 alt="Smit Patel" 
                 className="w-full h-64 object-cover object-center"
               />
@@ -189,7 +189,41 @@ const AboutUs = () => {
                   Expert in sustainable materials with a passion for reducing environmental impact 
                   through innovative packaging solutions.
                 </p>
-                <div className="flex space-x-3">
+                
+                {/* Skills Section */}
+                <div className="mt-6">
+                  <h4 className="font-semibold text-gray-900 mb-3">Skills</h4>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">UI/UX Design</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">Web Development</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">Figma</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">Adobe Creative Suite</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">Wireframing</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs">Prototyping</span>
+                  </div>
+                  
+                  <h4 className="font-semibold text-gray-900 mb-3">Education</h4>
+                  <div className="mb-2 text-sm">
+                    <div className="font-medium">Master of Engineering (Software Engineering)</div>
+                    <div className="text-gray-600">Carleton University, Sep 2024 - Present</div>
+                  </div>
+                  <div className="mb-4 text-sm">
+                    <div className="font-medium">Bachelor of Computer Engineering</div>
+                    <div className="text-gray-600">Gujarat Technical University, Aug 2019 - June 2023</div>
+                  </div>
+                  
+                  <h4 className="font-semibold text-gray-900 mb-3">Experience</h4>
+                  <div className="mb-2 text-sm">
+                    <div className="font-medium">Web Developer</div>
+                    <div className="text-gray-600">Eidolon Design Studio, Jan 2023 - Oct 2023</div>
+                  </div>
+                  <div className="mb-4 text-sm">
+                    <div className="font-medium">UI/UX & Graphic Designer</div>
+                    <div className="text-gray-600">Eidolon Design Studio, April 2022 – Dec 2022</div>
+                  </div>
+                </div>
+                
+                <div className="flex space-x-3 mt-6">
                   <a 
                     href="https://www.linkedin.com/in/smit-patel-0ba852134/" 
                     target="_blank" 
@@ -203,60 +237,6 @@ const AboutUs = () => {
                     href="mailto:smitpatel@cmail.carleton.ca" 
                     className="text-gray-600 hover:text-eco-green"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover-lift">
-              <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" 
-                alt="Team Member" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Emily Chen</h3>
-                <p className="text-eco-green font-medium mb-4">Head of R&D</p>
-                <p className="text-gray-600 mb-4">
-                  Materials scientist with a background in biodegradable polymers and mushroom-based packaging alternatives.
-                </p>
-                <div className="flex space-x-3">
-                  <a href="#" className="text-gray-600 hover:text-blue-500">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-eco-green">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover-lift">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80" 
-                alt="Team Member" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Michael Rodriguez</h3>
-                <p className="text-eco-green font-medium mb-4">Operations Director</p>
-                <p className="text-gray-600 mb-4">
-                  Supply chain expert with experience in scaling sustainable manufacturing processes.
-                </p>
-                <div className="flex space-x-3">
-                  <a href="#" className="text-gray-600 hover:text-blue-500">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-eco-green">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>

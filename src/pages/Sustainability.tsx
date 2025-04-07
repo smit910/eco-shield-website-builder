@@ -84,7 +84,6 @@ const Sustainability = () => {
             </div>
           </div>
           
-          {/* Impact Metrics */}
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
               <div>
@@ -143,9 +142,8 @@ const Sustainability = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <div className="h-80 bg-gray-200 rounded-xl overflow-hidden">
-                {/* Replace with actual image of mushroom foam */}
-                <img src="/placeholder.svg" alt="Mushroom Foam" className="w-full h-full object-cover" />
+              <div className="h-80 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1584680226833-0d680d0a0794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Mushroom Foam" className="w-full h-full object-cover" />
               </div>
             </div>
             
@@ -226,18 +224,16 @@ const Sustainability = () => {
             </div>
             
             <div className="order-1 md:order-2">
-              <div className="h-80 bg-gray-200 rounded-xl overflow-hidden">
-                {/* Replace with actual image of corrugated bubble wrap */}
-                <img src="/placeholder.svg" alt="Corrugated Bubble Wrap" className="w-full h-full object-cover" />
+              <div className="h-80 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1597106402699-c2dc3f58a998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Corrugated Bubble Wrap" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="h-80 bg-gray-200 rounded-xl overflow-hidden">
-                {/* Replace with actual image of hemp padding */}
-                <img src="/placeholder.svg" alt="Hemp Fiber Padding" className="w-full h-full object-cover" />
+              <div className="h-80 rounded-xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" alt="Hemp Fiber Padding" className="w-full h-full object-cover" />
               </div>
             </div>
             
@@ -351,10 +347,16 @@ const Sustainability = () => {
           </div>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-            {Array.from({ length: 6 }).map((_, i) => (
+            {[
+              "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
+              "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
+              "https://images.unsplash.com/photo-1560179304-6fc1d8749b23?ixlib=rb-4.0.3&auto=format&fit=crop&w=1774&q=80",
+              "https://images.unsplash.com/photo-1557318041-1ce374d55ebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1880&q=80",
+              "https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
+              "https://images.unsplash.com/photo-1554224155-3a58922a22c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1772&q=80"
+            ].map((imgUrl, i) => (
               <div key={i} className="bg-white p-4 rounded-lg shadow-sm hover-lift flex items-center justify-center h-32">
-                {/* Replace with actual certification logos */}
-                <div className="w-16 h-16 bg-gray-200 rounded-full"></div>
+                <img src={imgUrl} alt={`Certification ${i+1}`} className="max-h-16 max-w-full" />
               </div>
             ))}
           </div>

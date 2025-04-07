@@ -12,11 +12,11 @@ const CaseStudies = () => {
       id: 1,
       title: "How TechGadgets Reduced Shipping Damage by 87%",
       excerpt: "TechGadgets Inc. was experiencing significant losses due to product damage during shipping. Learn how EcoShield's mushroom foam solution transformed their logistics.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1625575055463-733d7d9d6264?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       client: {
         name: "Sarah Johnson",
         role: "Logistics Director, TechGadgets Inc.",
-        image: "/placeholder.svg"
+        image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
       },
       stats: [
         { label: "Damage Reduction", value: "87%" },
@@ -29,11 +29,11 @@ const CaseStudies = () => {
       id: 2,
       title: "Luxury Ceramics Co. Achieves 93% Decrease in Breakage",
       excerpt: "Shipping fragile ceramics was an expensive challenge until Luxury Ceramics Co. implemented EcoShield's custom packaging solution.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
       client: {
         name: "Michael Rodriguez",
         role: "Operations Manager, Luxury Ceramics Co.",
-        image: "/placeholder.svg"
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80"
       },
       stats: [
         { label: "Breakage Reduction", value: "93%" },
@@ -46,11 +46,11 @@ const CaseStudies = () => {
       id: 3,
       title: "GreenCommerce's Sustainability Success Story",
       excerpt: "See how GreenCommerce improved their sustainability metrics and customer satisfaction with EcoShield's eco-friendly packaging solutions.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
       client: {
         name: "Emily Chen",
         role: "Sustainability Officer, GreenCommerce",
-        image: "/placeholder.svg"
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1776&q=80"
       },
       stats: [
         { label: "Waste Reduction", value: "76%" },
@@ -65,19 +65,19 @@ const CaseStudies = () => {
     {
       name: "David Thompson",
       company: "Global Electronics",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       quote: "The custom inserts EcoShield designed for our product line have virtually eliminated transit damage while enhancing our unboxing experience. Our returns have dropped by 92% year over year.",
     },
     {
       name: "Jessica Wang",
       company: "Artisan Home Goods",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       quote: "As a company shipping delicate home decor items, damage protection and sustainability are critical for us. EcoShield packaging solved both challenges beautifully.",
     },
     {
       name: "Mark Andrews",
       company: "Premium Glassware",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
       quote: "We've been searching for years for a sustainable solution that could protect our glassware. EcoShield's mushroom foam has been revolutionary for our business.",
     }
   ];
