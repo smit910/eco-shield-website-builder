@@ -30,8 +30,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <div className="bg-eco-green p-1 rounded">
-            <div className="w-6 h-6 text-white flex items-center justify-center font-bold">E</div>
+          <div className="rounded-full overflow-hidden">
+            <img 
+              src="/public/lovable-uploads/cacba98c-8cd3-44eb-96d5-d0f70735896b.png" 
+              alt="EcoShield Logo" 
+              className="w-8 h-8"
+            />
           </div>
           <span className={`text-xl font-bold ${isScrolled ? 'text-eco-green-dark' : 'text-eco-green-dark'}`}>
             EcoShield Packaging
