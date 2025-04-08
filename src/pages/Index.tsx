@@ -1,5 +1,4 @@
-
-import { ArrowRight, Check, Leaf, Package, ShieldCheck, TrendingUp, Download, Play } from 'lucide-react';
+import { ArrowRight, Check, Leaf, Package, ShieldCheck, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import FeatureCard from '@/components/FeatureCard';
 import Navbar from '@/components/Navbar';
@@ -34,24 +33,6 @@ const Index = () => {
                 Sustainability Report
                 <Leaf className="ml-2 h-5 w-5" />
               </Link>
-            </div>
-            <div className="flex flex-wrap gap-4 mt-4 animate-fade-in" style={{animationDelay: "0.7s"}}>
-              <a 
-                href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing" 
-                target="_blank" 
-                className="btn-outline inline-flex items-center"
-              >
-                View Presentation
-                <Download className="ml-2 h-5 w-5" />
-              </a>
-              <a 
-                href="https://drive.google.com/file/d/1aDdV9AFdM-r2bAUgOAuY_eVWe6B_3X80/view?usp=sharing" 
-                target="_blank" 
-                className="btn-outline inline-flex items-center"
-              >
-                Watch Video
-                <Play className="ml-2 h-5 w-5" />
-              </a>
             </div>
             <div className="mt-8 flex items-center gap-4 animate-fade-in" style={{animationDelay: "0.8s"}}>
               <div className="flex -space-x-2">
@@ -142,7 +123,7 @@ const Index = () => {
               title="Compliance Ready"
               description="Meet and exceed sustainability regulations and ESG requirements with our certified eco-friendly packaging."
               icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>}
             />
           </div>
@@ -198,19 +179,11 @@ const Index = () => {
                 ))}
               </div>
               
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8">
                 <Link to="/solutions" className="btn-primary inline-flex items-center">
                   Explore Our Solutions
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <a 
-                  href="https://drive.google.com/file/d/1aDdV9AFdM-r2bAUgOAuY_eVWe6B_3X80/view?usp=sharing" 
-                  target="_blank" 
-                  className="btn-outline inline-flex items-center"
-                >
-                  Watch Intro Video
-                  <Play className="ml-2 h-5 w-5" />
-                </a>
               </div>
             </div>
             
@@ -293,7 +266,7 @@ const Index = () => {
             </div>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
               <a 
-                href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1AezLTTghm1Up7DzYgyRkyQzNj-tOtQXU/view?usp=sharing"
                 target="_blank" 
                 className="bg-transparent text-white border border-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition-colors"
               >

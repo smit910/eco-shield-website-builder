@@ -5,7 +5,6 @@ import SolutionCard from './SolutionCard';
 import SolutionBenefits from './SolutionBenefits';
 import SolutionProducts from './SolutionProducts';
 import { SolutionCategory } from '@/types/solutions';
-import { Download, Play } from 'lucide-react';
 
 interface SolutionsContentProps {
   solutions: SolutionCategory[];
@@ -58,25 +57,6 @@ const SolutionsContent = ({ solutions }: SolutionsContentProps) => {
             </TabsContent>
           ))}
         </Tabs>
-        
-        <div className="mt-12 text-center">
-          <a 
-            href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing"
-            target="_blank" 
-            className="btn-primary inline-flex items-center mx-2"
-          >
-            View Detailed Presentation
-            <Download className="ml-2 h-5 w-5" />
-          </a>
-          <a 
-            href="https://drive.google.com/file/d/1aDdV9AFdM-r2bAUgOAuY_eVWe6B_3X80/view?usp=sharing"
-            target="_blank"
-            className="btn-outline inline-flex items-center mx-2 mt-4 md:mt-0"
-          >
-            Watch Introduction Video
-            <Play className="ml-2 h-5 w-5" />
-          </a>
-        </div>
       </div>
     </section>
   );
