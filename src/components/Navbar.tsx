@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -30,12 +30,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <div className="rounded-full overflow-hidden">
-            <img 
-              src="/public/lovable-uploads/cacba98c-8cd3-44eb-96d5-d0f70735896b.png" 
-              alt="EcoShield Logo" 
-              className="w-8 h-8"
-            />
+          <div className="rounded-full bg-eco-green p-1 flex items-center justify-center w-8 h-8">
+            <Leaf className="w-5 h-5 text-white" />
           </div>
           <span className={`text-xl font-bold ${isScrolled ? 'text-eco-green-dark' : 'text-eco-green-dark'}`}>
             EcoShield Packaging
