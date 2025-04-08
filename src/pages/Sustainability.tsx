@@ -1,4 +1,3 @@
-
 import { ArrowRight, Leaf, BarChart3, LineChart, Recycle, Droplets, TreePine } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -154,7 +153,7 @@ const Sustainability = () => {
                 Our signature packaging material is grown, not manufactured. Using agricultural waste and mycelium (mushroom roots), we create custom-molded packaging that's 100% home compostable.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
                   {
                     label: "Biodegradable",
@@ -173,7 +172,7 @@ const Sustainability = () => {
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex">
-                    <div className="w-24 flex-shrink-0">
+                    <div className="w-32 flex-shrink-0">
                       <div className="font-semibold text-gray-900">{item.label}</div>
                     </div>
                     <div>
@@ -244,7 +243,7 @@ const Sustainability = () => {
                 Ultra-strong natural fiber padding made from sustainably grown hemp, offering excellent protection for heavier items with minimal environmental impact.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
                   {
                     label: "Biodegradable",
@@ -263,7 +262,7 @@ const Sustainability = () => {
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex">
-                    <div className="w-24 flex-shrink-0">
+                    <div className="w-32 flex-shrink-0">
                       <div className="font-semibold text-gray-900">{item.label}</div>
                     </div>
                     <div>

@@ -41,7 +41,7 @@ const AboutUs = () => {
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <a 
-                  href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing" 
+                  href="https://drive.google.com/file/d/1AezLTTghm1Up7DzYgyRkyQzNj-tOtQXU/view?usp=sharing" 
                   target="_blank" 
                   className="btn-primary inline-flex items-center"
                 >
@@ -260,7 +260,7 @@ const AboutUs = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="https://docs.google.com/presentation/d/1ySS2CcwkYaqh4mlYqJOA-86lxDU33ZxZ/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1AezLTTghm1Up7DzYgyRkyQzNj-tOtQXU/view?usp=sharing"
                 target="_blank" 
                 className="bg-white text-eco-green px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
               >
